@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NundoTV | Watch Channels & Stream Videos",
     description: "The ultimate ad-free streaming experience with local media and Picture-in-Picture support.",
-    url: "https://nundotv.com",
+    url: "https://nundotvweb.vercel.app",
     siteName: "NundoTV",
     images: [
       {
