@@ -23,8 +23,8 @@ export default function Navbar() {
                             <Link href="#premium" className="text-gray-300 hover:text-brand px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">
                                 Premium
                             </Link>
-                            <Link href="#download" className="bg-brand text-white hover:bg-brand/80 px-6 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-all shadow-[0_0_10px_rgba(229,9,20,0.5)]">
-                                Download
+                            <Link href="https://github.com/Harrymica/NundoTv_app/releases/download/v1.0.0/NundoTv.apk" className="bg-brand text-white hover:bg-brand/80 px-6 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-all shadow-[0_0_10px_rgba(229,9,20,0.5)]">
+                                Download APK
                             </Link>
                         </div>
                     </div>
