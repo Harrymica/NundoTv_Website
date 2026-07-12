@@ -38,9 +38,6 @@ export const metadata: Metadata = {
     description: "Watch channels and stream videos ad-free with NundoTV.",
     images: ["/icon.png"],
   },
-  icons: {
-    icon: "/icon.png",
-  },
   verification: {
     google: "Tr2W_DAiDYbNAaj3h7YsEvaLkiyxtF1tAPbY76i5LUw",
   },
