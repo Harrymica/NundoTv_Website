@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import DownloadConsentButton from './DownloadConsentButton';
 
 export default function Navbar() {
     return (
@@ -23,9 +24,7 @@ export default function Navbar() {
                             <Link href="#premium" className="text-gray-300 hover:text-brand px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">
                                 Premium
                             </Link>
-                            <Link href="https://github.com/Harrymica/NundoTv-Releases/releases/download/v1.0.0/NundoTv.apk" className="bg-brand text-white hover:bg-brand/80 px-6 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-all shadow-[0_0_10px_rgba(229,9,20,0.5)]">
-                                Download APK
-                            </Link>
+                            <DownloadConsentButton variant="navbar" apkUrl="https://github.com/Harrymica/NundoTv-Releases/releases/download/v1.0.0/default.NundoTv" />
                         </div>
                     </div>
 

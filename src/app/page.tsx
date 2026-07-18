@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar';
-import NeonButton from '@/components/NeonButton';
+import DownloadConsentButton from '@/components/DownloadConsentButton';
 import SlantedDivider from '@/components/SlantedDivider';
 import Image from 'next/image';
 
@@ -23,9 +23,7 @@ export default function Home() {
             NundoTV is the uncompromising mobile app built for pure entertainment. Dark themed. Ad-Free options. Picture-in-Picture.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 mt-4">
-            <NeonButton href="https://github.com/Harrymica/NundoTv-Releases/releases/download/v1.0.0/NundoTv.apk" className="text-xl px-10 py-5 border-[3px] shadow-[0_0_30px_rgba(229,9,20,0.5)]">
-              Download Android
-            </NeonButton>
+            <DownloadConsentButton variant="hero" apkUrl="https://github.com/Harrymica/NundoTv-Releases/releases/download/v1.0.0/default.NundoTv" className="text-xl px-10 py-5 border-[3px] shadow-[0_0_30px_rgba(229,9,20,0.5)]" />
             <button className="inline-flex items-center justify-center px-10 py-5 border-2 border-gray-700 text-gray-500 text-lg font-bold uppercase tracking-wider border-slanted cursor-not-allowed bg-black/40" title="Coming soon!">
               iOS (Coming Soon)
             </button>
