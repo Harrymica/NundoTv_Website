@@ -60,6 +60,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
       suppressHydrationWarning
     >
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-9224529796692893" />
+      </head>
       <body className="min-h-full flex flex-col bg-black text-white" suppressHydrationWarning>
         {adsenseClientId && (
           <Script
