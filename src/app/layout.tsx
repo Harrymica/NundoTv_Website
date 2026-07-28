@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -48,6 +49,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const rawAdsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+  const adsenseClientId = rawAdsenseClientId
+    ? (rawAdsenseClientId.startsWith("pub-") ? `ca-${rawAdsenseClientId}` : rawAdsenseClientId)
+    : undefined;
+
   return (
     <html
       lang="en"
@@ -55,6 +61,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-black text-white" suppressHydrationWarning>
+        {adsenseClientId && (
+          <Script
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+          />
+        )}
         <Navbar />
         {children}
       </body>

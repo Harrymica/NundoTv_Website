@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import DownloadConsentButton from '@/components/DownloadConsentButton';
 import SlantedDivider from '@/components/SlantedDivider';
+import WebsiteAdBanner from '@/components/WebsiteAdBanner';
 import Image from 'next/image';
 
 export default function Home() {
@@ -30,6 +31,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <WebsiteAdBanner />
 
       <SlantedDivider color="bg-bg-panel" direction="right" />
 
@@ -199,6 +202,8 @@ export default function Home() {
 
         </div>
       </section>
+
+      <WebsiteAdBanner />
 
       {/* ─── FOOTER ─── */}
       <footer className="bg-black py-16 px-4 border-t-4 border-brand border-slanted relative">
