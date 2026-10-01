@@ -28,7 +28,7 @@ export default function Navbar() {
                             <Link href="#premium" className="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">
                                 Premium
                             </Link>
-                            <DownloadConsentButton variant="navbar" apkUrl="https://github.com/Harrymica/NundoTv_app/releases/download/v1.0.1/application-8d494a92-92b3-4269-8172-5be1d5db24a1.apk" />
+                            <DownloadConsentButton variant="navbar" apkUrl="https://github.com/Harrymica/NundoTv_app/releases/download/v1.0.1/NundoTV" />
                         </div>
                     </div>
 

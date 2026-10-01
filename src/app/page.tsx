@@ -25,7 +25,7 @@ export default function Home() {
             NundoTV is the uncompromising mobile app built for pure entertainment. Dark themed. Ad-Free options. Picture-in-Picture.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 mt-4">
-            <DownloadConsentButton variant="hero" apkUrl="https://github.com/Harrymica/NundoTv_app/releases/download/v1.0.1/application-8d494a92-92b3-4269-8172-5be1d5db24a1.apk" className="text-xl px-10 py-5 border-[3px] shadow-[0_0_30px_rgba(229,9,20,0.5)]" />
+            <DownloadConsentButton variant="hero" apkUrl="https://github.com/Harrymica/NundoTv_app/releases/download/v1.0.1/NundoTV" className="text-xl px-10 py-5 border-[3px] shadow-[0_0_30px_rgba(229,9,20,0.5)]" />
             <button className="inline-flex items-center justify-center px-10 py-5 border-2 border-gray-700 text-gray-500 text-lg font-bold uppercase tracking-wider border-slanted cursor-not-allowed bg-black/40" title="Coming soon!">
               iOS (Coming Soon)
             </button>
