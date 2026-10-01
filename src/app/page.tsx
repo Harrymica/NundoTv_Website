@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import DownloadConsentButton from '@/components/DownloadConsentButton';
 import SlantedDivider from '@/components/SlantedDivider';
 import WebsiteAdBanner from '@/components/WebsiteAdBanner';
+import LiveMatchesWidget from '@/components/LiveMatchesWidget';
 import Image from 'next/image';
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
             NundoTV is the uncompromising mobile app built for pure entertainment. Dark themed. Ad-Free options. Picture-in-Picture.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 mt-4">
-            <DownloadConsentButton variant="hero" apkUrl="https://github.com/Harrymica/NundoTv-Releases/releases/download/v1.0.0/default.NundoTv" className="text-xl px-10 py-5 border-[3px] shadow-[0_0_30px_rgba(229,9,20,0.5)]" />
+            <DownloadConsentButton variant="hero" apkUrl="https://github.com/Harrymica/NundoTv_app/releases/download/v1.0.1/application-8d494a92-92b3-4269-8172-5be1d5db24a1.apk" className="text-xl px-10 py-5 border-[3px] shadow-[0_0_30px_rgba(229,9,20,0.5)]" />
             <button className="inline-flex items-center justify-center px-10 py-5 border-2 border-gray-700 text-gray-500 text-lg font-bold uppercase tracking-wider border-slanted cursor-not-allowed bg-black/40" title="Coming soon!">
               iOS (Coming Soon)
             </button>
@@ -137,9 +138,7 @@ export default function Home() {
             </div>
 
             <div className="w-full md:w-7/12 relative z-10">
-              <div className="w-full aspect-[16/9] bg-[#111] rounded-2xl relative shadow-2xl border border-white/10 overflow-hidden transform md:translate-x-12">
-                <Image src="/images/sporttv.jpg" alt="Live Sports" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
-              </div>
+              <LiveMatchesWidget />
             </div>
           </div>
 

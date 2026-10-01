@@ -18,13 +18,17 @@ export default function Navbar() {
 
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <Link href="#features" className="text-gray-300 hover:text-brand px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">
+                            <Link href="/channels" className="text-red-500 hover:text-red-400 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors flex items-center gap-1.5">
+                                <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+                                24/7 TV Channels
+                            </Link>
+                            <Link href="#features" className="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">
                                 Features
                             </Link>
-                            <Link href="#premium" className="text-gray-300 hover:text-brand px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">
+                            <Link href="#premium" className="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-colors">
                                 Premium
                             </Link>
-                            <DownloadConsentButton variant="navbar" apkUrl="https://github.com/Harrymica/NundoTv-Releases/releases/download/v1.0.0/default.NundoTv" />
+                            <DownloadConsentButton variant="navbar" apkUrl="https://github.com/Harrymica/NundoTv_app/releases/download/v1.0.1/application-8d494a92-92b3-4269-8172-5be1d5db24a1.apk" />
                         </div>
                     </div>
 
